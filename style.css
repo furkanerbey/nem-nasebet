@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Unbounded', 'Space Grotesk', sans-serif;
+  background-color: #0b0c10;
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff5252;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1518976024611-488f97c0f37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.scroll-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Info */
+.info {
+  background: #111;
+  padding: 2rem;
+  text-align: center;
+}
+
+.info-box {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Setlist */
+.setlist {
+  background: linear-gradient(to bottom, #111, #0b0c10);
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.setlist ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.setlist li {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #ffcb74;
+}
+
+/* Band Section */
+.band {
+  background: #181a1f;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.band .desc {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.band-grid ul {
+  list-style: none;
+  padding-left: 0;
+  color: #e6e6e6;
+}
+
+.band-grid li {
+  padding: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #0b0c10;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .scroll-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+.gallery {
+  padding: 4rem 2rem;
+  background-color: #0d0d0d;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+.band-logo {
+  max-width: 180px;
+  margin: 0 auto 2rem auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+.flow {
+  background: #111;
+  padding: 4rem 2rem;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.flow h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.flow-block {
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.flow-block h3 {
+  color: #ffcb74;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.flow-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flow-block li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.flow-block span {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.flow-crew {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.flow-crew h3 {
+  font-size: 1.2rem;
+  color: #ff5252;
+  margin-bottom: 1rem;
+}
+
+.flow-crew ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
